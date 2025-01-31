@@ -1,0 +1,1 @@
+In Objective-C, a rare but impactful error stems from the misuse of `performSelector:withObject:afterDelay:`.  If the selector targets a method that's deallocated before the delay elapses, it results in a crash. This is especially tricky when dealing with asynchronous operations and object lifecycles.
